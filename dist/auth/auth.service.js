@@ -75,19 +75,19 @@ let AuthService = class AuthService {
         expiresIn.setDate(expiresIn.getDate() + this.EXPIRE_DAY_REFRESH_TOKEN);
         res.cookie(this.REFRESH_TOKEN_NAME, refreshToken, {
             httpOnly: true,
-            domain: 'localhost',
+            domain: 'https://lovely-tt-3bd5d8.netlify.app',
             expires: expiresIn,
             secure: true,
-            sameSite: 'lax'
+            sameSite: 'none'
         });
     }
     removeRefreshTokenFromResponse(res) {
         res.cookie(this.REFRESH_TOKEN_NAME, '', {
             httpOnly: true,
-            domain: 'localhost',
+            domain: 'https://lovely-tt-3bd5d8.netlify.app',
             expires: new Date(0),
             secure: true,
-            sameSite: 'lax'
+            sameSite: 'none'
         });
     }
 };
