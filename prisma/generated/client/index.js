@@ -141,7 +141,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "E:\\Projects\\Next+Nest\\red-planner-record\\red-planner-back-end\\prisma\\generated\\client",
+      "value": "E:\\Projects\\Next+Nest\\Geek_code_test\\server\\prisma\\generated\\client",
       "fromEnvVar": null
     },
     "config": {
